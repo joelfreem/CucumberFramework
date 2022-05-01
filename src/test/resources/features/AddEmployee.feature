@@ -1,5 +1,5 @@
 Feature: Adding the employee in HRMS application
-  @regression
+  @regression @Joel
   Scenario: Adding one employee from feature file
     #Given user is navigated to HRMS application
     When user enters valid admin credentials
