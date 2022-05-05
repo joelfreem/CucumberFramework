@@ -2,14 +2,15 @@ package steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import pages.LoginPage;
 import utils.CommonMethods;
 
 public class LoginSteps extends CommonMethods {
     @Then("admin user is successfully logged in")
     public void admin_user_is_successfully_logged_in() {
-        System.out.println("test passed");
-        //tearDown();
+        Assert.assertTrue(dash.welcomeMessage.isDisplayed());
+        // tearDown();
     }
 
     @When("user enters valid ess username and password")
