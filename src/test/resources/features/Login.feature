@@ -4,7 +4,7 @@ Feature: Validation of login scenarios
     #Given user is navigated to HRMS application
 
 
-  @batch12 @smoke @regression @sprint12
+  @batch12 @smoke @regression @sprint13
   Scenario: Admin login
     #Given user is navigated to HRMS application
     When user enters valid admin credentials

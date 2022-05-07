@@ -17,9 +17,10 @@ Feature: Adding the employee in HRMS application
 
 
     Scenario: Adding one employee using cucumber feature file
-      And user enter "zuhoor" "Mujeeb" and "silva"
-      And user clicks on save button
-      Then employee added successfully
+  Scenario: Adding one employee using cucumber feature file
+    And user enters "zuhoor" "Mujeeb" and "silvia"
+    And user clicks on save button
+    Then employee added successfully
 
 
       Scenario Outline: Adding multiple employees
@@ -41,5 +42,10 @@ Feature: Adding the employee in HRMS application
           |Yazgul   |MS        |Kishan  |
           |Tarik    |MS        |Mujeeb  |
           |Nassir   |MS        |Volkan  |
+
+          @exel
+          Scenario: Adding multiple employees from exel file
+            When user add multiple employees from excel file using "EmployeeData" sheet and verify the user added
+
 
 
