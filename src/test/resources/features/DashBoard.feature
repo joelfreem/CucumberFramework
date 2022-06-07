@@ -5,4 +5,4 @@ Feature: Dashboard tabs verification functionality
     And user clicks on login button
     Then admin user is successfully logged in
     Then user verifies all the dashboard tabs
-    |Admin|Pim|Leave|Time|Recruitment|Performance|Dashboard|Directory|
+      |Admin|PIM|Leave|Time|Recruitment|Performance|Dashboard|Directory|

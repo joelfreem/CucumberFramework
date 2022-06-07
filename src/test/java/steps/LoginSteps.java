@@ -25,8 +25,9 @@ public class LoginSteps extends CommonMethods {
 
     @Then("ess user is successfully logged in")
     public void ess_user_is_successfully_logged_in() {
+        Assert.assertFalse(dash.welcomeMessage.isDisplayed());
         //leaving it for validation
-       // tearDown();
+        //  tearDown();
     }
 
     @When("user enters invalid username and password")
@@ -42,6 +43,6 @@ public class LoginSteps extends CommonMethods {
     @Then("user see error message on the screen")
     public void user_see_error_message_on_the_screen() {
         //homework - verify error message for this
-       // tearDown();
+        //   tearDown();
     }
 }

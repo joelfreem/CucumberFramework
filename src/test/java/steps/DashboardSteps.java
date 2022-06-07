@@ -31,6 +31,7 @@ public class DashboardSteps extends CommonMethods{
         Assert.assertTrue(expectedTabs.equals(actualTabs));
     }
 
-    }
+
+}
 
 
